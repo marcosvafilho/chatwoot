@@ -4,8 +4,9 @@
 
 # code from current master : https://github.com/rails/rails/blob/8520cc77133d9ff642e2c393b4ee5eae2a2a28b6/activestorage/lib/active_storage/service/azure_storage_service.rb
 
-require 'azure/storage/blob'
-require 'active_storage/service/azure_storage_service'
+require "azure/storage/blob"
+require "azure/storage/common/core/auth/shared_access_signature"
+
 module ActiveStorage
   # Wraps the Microsoft Azure Storage Blob Service as an Active Storage service.
   # See ActiveStorage::Service for the generic API documentation that applies to all services.
